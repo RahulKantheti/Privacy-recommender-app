@@ -1,0 +1,51 @@
+{
+    "Pixel 7 pro": {
+      "sensing_range": "10 meters",
+      "sensor_capabilities": ["Audio", "Video"],
+      "activation": "Always ready",
+      "retention": "24 months",
+      "storage location ": ["Local device", "Cloud storage"]
+    },
+    "Pixel 6A": {
+      "sensing_range": "10 meters",
+      "sensor_capabilities": ["Audio", "Video"],
+      "activation": "Always Ready",
+      "retention": "24 months",
+      "storage_location": ["Local device", "Cloud storage"]
+    },
+    "Amazon echo": {
+      "sensing_range": "7.62 meters",
+      "sensor_capabilities": ["Audio"],
+      "activation": "Always Ready",
+      "retention": "18 months",
+      "storage_location": ["Amazon’s cloud"]
+    },
+    "Amazon Fire TV": {
+      "sensing_range": "5 meters",
+      "sensor_capabilities": ["Audio"],
+      "activation": "Manual",
+      "retention": "1 month",
+      "storage_location": ["Amazon cloud"]
+    },
+    "Ring": {
+      "sensing_range": "12 meters",
+      "sensor_capabilities": ["Audio", "Video"],
+      "activation": "Always on",
+      "retention": "2 months",
+      "storage_location": ["Cloud (AWS servers)"]
+    },
+    "Nanit The Baby Monitor": {
+      "sensing_range": "30 meters",
+      "sensor_capabilities": ["Audio", "Video"],
+      "activation": "Always on",
+      "retention": "0.4 months",
+      "storage_location": ["Nanit App"]
+    },
+    "generic":{
+      "sensing_range": "30 meters",
+      "sensor_capabilities": ["Audio", "Video"],
+      "activation": "Always on",
+      "retention": "0.4 months",
+      "storage_location": ["Yolo"]
+    }
+}

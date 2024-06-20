@@ -1,0 +1,72 @@
+{
+    "sensor_list": [
+        {
+            "sensor_name": "Pixel 7 pro",
+            "sensor_id": "A3B6F9D1C8E7G4H2",
+            "range": 10,
+            "x": 1,
+            "y": 10,
+            "type": 1,
+            "last_updated": 10,
+            "distance": 6.809483398936478
+        },
+        {
+            "sensor_name": "Pixel 6A",
+            "sensor_id": "J5K8N3P2Q6R1S9T7",
+            "range": 100,
+            "x": 5,
+            "y": 7,
+            "type": 1,
+            "last_updated": 8,
+            "distance": 2.090754927797569
+        },
+        {
+            "sensor_name": "Amazon echo",
+            "sensor_id": "U4V2W9X5Y1Z8A6B3",
+            "range": 100,
+            "x": 3,
+            "y": 12,
+            "type": 1,
+            "last_updated": 15,
+            "distance": 7.471715893871501
+        },
+        {
+            "sensor_name": "HAZARDZONE666",
+            "sensor_id": "M8N3P5Q2R9S4T7U1",
+            "range": 0,
+            "x": 6,
+            "y": 15,
+            "type": 1,
+            "last_updated": 16,
+            "distance": 10.000637467493897
+        },
+        {
+            "sensor_name": "DEATHWATCH007",
+            "sensor_id": "D1E7F4G8H2J5K3L6",
+            "range": 0,
+            "x": 2,
+            "y": 6,
+            "type": 1,
+            "last_updated": 12,
+            "distance": 3.76299323510494
+        },
+        {
+            "sensor_name": "Pixel 6a",
+            "sensor_id": "",
+            "range": 10,
+            "x": 5.629399759626494,
+            "y": 5.00623168078838,
+            "type": 2,
+            "last_updated": 1713840002
+        },
+        {
+            "sensor_name": "Pixel 6a",
+            "sensor_id": "",
+            "range": 10,
+            "x": 5.629399759626494,
+            "y": 5.00623168078838,
+            "type": 2,
+            "last_updated": 1713840023
+        }
+    ]
+}

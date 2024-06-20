@@ -1,0 +1,112 @@
+{
+  "strategy-list": [
+    {
+      "id": 1,
+      "msg": "Move out of the sensors range",
+      "user_status": "moving",
+      "sensor_status": "not moving"
+    },
+    {
+      "id": 2,
+      "msg": "Move to next room",
+      "user_status": "moving",
+      "sensor_status": "not moving"
+    },
+    {
+      "id": 3,
+      "msg": "Contact Admin to mute the microphone",
+      "user_status": "not moving",
+      "sensor_status": "not moving"
+    },
+    {
+      "id": 4,
+      "msg": "Contact Admin to mute the microphone",
+      "user_status": "moving",
+      "sensor_status": "not moving"
+    },
+    {
+      "id": 5,
+      "msg": "Any Pre-recorded data contact admin to delete the data",
+      "user_status": "moving",
+      "sensor_status": "not moving"
+    },
+    {
+      "id": 6,
+      "msg": "Any Pre-recorded data contact admin to delete the data",
+      "user_status": "not moving",
+      "sensor_status": "not moving"
+    },
+    {
+      "id": 7,
+      "msg": "Carry microphone cover",
+      "user_status": "moving",
+      "sensor_status": "not moving"
+    },
+    {
+      "id": 8,
+      "msg": "Carry microphone cover",
+      "user_status": "not moving",
+      "sensor_status": "not moving"
+    },
+    {
+      "id": 9,
+      "msg": "Carry white noise generator",
+      "user_status": "moving",
+      "sensor_status": "not moving"
+    },
+    {
+      "id": 10,
+      "msg": "Carry white noise generator",
+      "user_status": "not moving",
+      "sensor_status": "not moving"
+    },
+    {
+      "id": 11,
+      "msg": "Move out of the sensors range",
+      "user_status": "moving",
+      "sensor_status": "moving"
+    },
+    {
+      "id": 12,
+      "msg": "Move to next room",
+      "user_status": "moving",
+      "sensor_status": "moving"
+    },
+    {
+      "id": 13,
+      "msg": "Request moving sensors to mute their microphone",
+      "user_status": "moving",
+      "sensor_status": "moving"
+    },
+    {
+      "id": 14,
+      "msg": "Request moving sensors to mute their microphone",
+      "user_status": "not moving",
+      "sensor_status": "moving"
+    },
+    {
+      "id": 15,
+      "msg": "Request moving sensors to delete the data",
+      "user_status": "moving",
+      "sensor_status": "moving"
+    },
+    {
+      "id": 16,
+      "msg": "Request moving sensors to delete the data",
+      "user_status": "not moving",
+      "sensor_status": "moving"
+    },
+    {
+      "id": 17,
+      "msg": "Carry white noise generator",
+      "user_status": "moving",
+      "sensor_status": "moving"
+    },
+    {
+      "id": 18,
+      "msg": "Carry white noise generator",
+      "user_status": "not moving",
+      "sensor_status": "moving"
+    }
+  ]
+}

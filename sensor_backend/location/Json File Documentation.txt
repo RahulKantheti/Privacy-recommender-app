@@ -1,0 +1,19 @@
+File: beacon.json
+Description: This JSON file contains information about the locations of beacon devices.
+Programmer: [Rahul Kantheti, Wasim Syed]
+Copyright 2024 
+
+File: sensor_info.json
+Description: This JSON file contains information about various sensor devices.
+Programmer: [Keerthi Pendyala, Sakshith Reddy]
+Copyright 2024 
+
+File: sensor.json
+Description: This JSON file contains information about various sensor devices and their readings.
+Programmer: [Vidit Sanghvi]
+Copyright 2024 
+
+File: mitigation_strategies.json
+Description: This JSON file contains information about various sensor devices and their readings.
+Programmer: [Keerthi, Pendyala, Rahul Kantheti, Vidit Sanghvi]
+Copyright 2024  
