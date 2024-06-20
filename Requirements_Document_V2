@@ -1,0 +1,84 @@
+Project Proposal: Privacy-Related Behavior Recommendation Web-Browser for IoT Sensors - Team 27
+
+Goal of the Project: 
+The goal of the project is to address the lack of privacy awareness that users have in the context of Internet of Things (IoT) devices. The primary purpose is to develop a privacy-related recommendation Web-Browser that empowers users to make informed decisions about their privacy based on their location and the capabilities of IoT sensors in their environment. By providing context-aware recommendations, users can better understand the privacy implications of their surroundings and can make informed choices about how their data is collected and used. The project aims to educate users about potential privacy gaps and help them mitigate the potential risks associated with data collection and utilization. 
+Literature Review:
+We have narrowed down 5 research works done in this area and reviewed them one each.
+
+IoT Service Store: A Web-based System for Privacy-aware IoT Service Discovery and Interaction - [1] - Rahul Kantheti
+
+Summary and Approach of the Research:
+The research presents a web-based system called IoT Service Store (ISS) designed to address privacy concerns in Internet of Things (IoT) services. The main goal is to empower users to understand and control the collection, processing, and transmission of their sensor data by providing detailed information which can serve as privacy recommendations. The system uses Bluetooth beacons and a unique URL scheme to discover nearby IoT devices.
+
+Methodology:
+ISS is designed as a client-server model, with users querying privacy-related information through web browsers. 
+ISS utilizes the Physical Web and Eddystone beacons to enable IoT service providers to broadcast service URLs.
+Users detect these URLs via Bluetooth-enabled smartphones, enhancing the discoverability of nearby IoT services; this also provides critical information about the IoT device.
+
+
+Your Location has been Shared 5,398 Times! A Field Study on Mobile App Privacy Nudging - [2] - Sakshith Reddy Kasmola
+
+Summary and Approach of the Research:
+The research delves into the functionality of AppOps, an application designed to empower users in adjusting permissions for various apps, particularly those accessing location and other sensitive data on their smartphones. AppOps serves as a permission manager, offering users the ability to actively review and modify app permissions. The study introduces the concept of privacy nudges, strategically timed alerts aimed at prompting users to pay attention to and adjust their privacy settings. These nudges are implemented in phases, allowing researchers to assess user responsiveness and engagement over time. 
+![WhatsApp Image 2024-02-23 at 9 39 05 AM](https://github.com/skasmola/SER-517_Team-27/assets/112655036/741cfe69-ee55-4730-b626-1ee73c736b46)
+
+Methodology:
+AppOps in Phase 1 establish a baseline into the user phone thereby forming the entry into study methodology.
+In the 2nd Phase, privacy nudges were introduced to trigger the recommendations to adjust privacy settings.
+After continuous study, the data is collected and analyzed by the users who actively changed the permissions of their applications in necessary phases.
+Informing the Design of a Personalized Privacy Assistant for the Internet of Things | Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems  - [3] - Keerthi Pendyala
+Summary and Approach of the Research:
+The paper explores the development of Personalized Privacy Assistants (PPAs) to help users manage privacy in IoT environments. It uses semi-structured interviews to understand user perceptions of PPAs, focusing on three increasingly autonomous implementations (notifications, recommendation and auto) . Users expressed a need for customization in privacy settings to manage the cognitive load without compromising their autonomy. The study emphasizes the importance of designing Personalized Privacy Assistants (PPAs) that offer adjustable levels of automation, clear consent mechanisms, and effective notification systems to enhance user trust and engagement in IoT settings.
+ Methodology:
+The study reveals users' preferences for control versus automation and the desire to mitigate cognitive overload. 
+Participants were introduced to three PPA implementations with varying levels of autonomy—from manual controls to fully automated decisions. 
+The 3 leading questions were  
+“What if there was an app on your phone that could tell you about the different types of data collections that are happening from the Internet of Things devices that are in the room or building that you are in. What do you think of this idea?”
+“Now imagine this app could automatically recommend decisions for you based on your preferences on when to allow, deny, or limit different data collections. Would you use this feature?”
+“What if instead of just recommending decisions this app could, on its own, make this decision for you based on your preferences. Would you use this feature?”
+This methodology allowed for in-depth insights into user preferences for privacy management, the trade-offs between automation and control, and the specific features desired in PPAs to effectively manage privacy in the context of IoT devices and services.
+Interactive Privacy Management: Towards Enhancing Privacy Awareness and Control in Internet of Thing - [4] Vidit Sanghvi
+Summary and Approach:
+The paper primarily relies on a literature review to extract relevant information regarding privacy factors and notification methods. The authors adopt a systematic approach to address the inadequacy of existing IoT privacy notices by proposing a comprehensive privacy management toolkit. They identify five key privacy considerations in the IoT context and three-step design pattern in notification alerts to the user.
+Findings, Studies and Methodology:
+They identify five key privacy considerations in the IoT context: type, usage, storage, retention period, and access. 
+The authors categorize and analyze existing studies in the field, emphasizing the three-step design pattern: presentation, framing, and interaction. 
+Presentation involves using various content forms like icons, text, and sounds.
+Framing explores different structures and designs, such as grids, circular views, and notification intensity.
+Interaction features user actions to convey information, including clicking, hovering, and selecting options.
+IoT Privacy and Security Challenges for Smart Home Environments - [5] - Wasim Ahamed
+
+Summary and Approach : 
+
+The paper "IoT Privacy and Security Challenges for Smart Home Environments" employs a holistic approach by identifying key privacy and security issues, reviewing existing research, comparing security features of smart home devices, illustrating vulnerabilities through case studies, and providing recommendations. This comprehensive analysis aims to raise awareness and suggest solutions for maintaining a balance between functionality and user privacy in smart homes.
+Findings, Studies and Methodology:
+Smart homes pose privacy risks such as unauthorized access, data breaches, eavesdropping, and profiling due to inadequate security measures in IoT devices. Users often face limited control over data collection and privacy settings, hampering their ability to safeguard information. Achieving a balance between smart home convenience and privacy necessitates thoughtful considerations and informed user choices. The paper compares diverse smart home devices, evaluating their associated privacy and security features, and explores potential privacy vulnerabilities in specific scenarios within smart home environments.
+
+Combined pros: 
+The results provided by ISS are 100% accurate and provide the user an option to choose privacy preferences.
+Privacy Recommendation for IoT devices utilize AppOps and Privacy Nudges for enhancing user privacy.
+This interview conducted on 17 people offers deep qualitative insights into user attitudes, which are crucial for designing user-centric PPAs. 
+Addresses the importance of using notifications to alert users, the extensive survey of existing literature and use case examples, makes the toolkit with diverse perspectives.
+The analysis provides valuable information for stakeholders to understand the nature of these challenges and develop potential solutions.
+
+
+Combined cons:
+ISS implementation comes at the cost of an IoT maker creating a URL for the device. This might not be agreed in a real world scenario.
+The generalizability of its findings, as the study's sample may not fully represent the diverse user base of IoT devices, potentially limiting the applicability of its recommendations across all demographics.
+The paper focused more on  the IoT device rather than web or mobile apps to solve the issue. And did not consider the dynamic nature of IoT devices.
+The research didn’t be specific about the type of IoT devices that privacy needs to be set up and interoperability issues may arise for integrating with IoT devices.
+The paper primarily focuses on technical vulnerabilities and challenges, potentially neglecting user perspectives and social implications.
+
+Developing the System: (Requirements of the Project)
+After a thorough review of existing research, detailed examination of various implementations, and careful evaluation of their respective advantages and disadvantages, we propose the following system.
+Proposed Android App for Privacy Management: 
+Considering the intricacies of privacy management, we recommend the development of an Android app rather than a web app for enhanced user engagement and utility. Mobile apps offer a personalized experience, aligning perfectly with the swift and accessible privacy controls required in IoT environments. Leveraging the smartphone's notification system, the proposed system will deliver timely alerts and interactions to keep users informed. Utilizing the smartphone's location, the system will estimate sensing capabilities of current location and provide detailed analysis of data type, usage, storage, retention period, and access, providing comprehensive information corresponding to the associated sensors. This data can also be used to provide recommendations to the user to align with their privacy goals.
+Sponsor’s Updated Requirement: The proposed feature also involves detecting smartphone location and distinguishing between moving and fixed beacons within specific indoor environments. In these designated indoor locations, our app will provide users with comprehensive information, including the layout, room size, beacon locations, and details about each beacon's sensor capabilities. These capabilities encompass sensing distance, storage location of sensed data, retention policies for stored data, as well as the type, purpose, and access permissions associated with the sensed data. For example, if the sensor is a microphone and we know its location and range, then using the smartphone’s location we can check if the microphone is recording the user's conversation or not.
+What we suggested additionally: An image recognition feature in the app allowing users to capture images, the captured image is put through an image recognition algorithm that looks for “devices” in the image to identify potential privacy issues. To empower users further, the app will provide recommendations about the IoT sensors in the devices it recognizes in the image’s. This proposal aims to deliver a comprehensive, user-centric solution for managing IoT privacy seamlessly.
+
+References
+H. Lee, R. Chow, M. R. Haghighat, H. M. Patterson and A. Kobsa, "IoT Service Store: A Web-based System for Privacy-aware IoT Service Discovery and Interaction," 2018 IEEE International Conference on Pervasive Computing and Communications Workshops, 2018 
+Almuhamed, Hazim & Schaub, Florian & Sadeh, Norman & Adjerid, Idris & Acquisti, Alessandro & Gluck, Joshua & Cranor, Lorrie & Agarwal, Yuvraj. (2015). Your Location has been Shared 5,398 Times! A Field Study on Mobile App Privacy Nudging. 10.1145/2702123.2702210. 
+Colnago, J., Feng, Y., Palanivel, T., Pearman, S., Ung, M., Acquisti, A., Cranor, L. F., Sadeh, N. (2020) Informing the Design of a Personalized Privacy Assistant for the Internet of Things | Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems 
+W. R. O. P. C. MUHANDER BAYAN, "Interactive Privacy Management: Towards Enhancing Privacy Awareness and Control in Internet of Things," ACM Transactions on Internet of Things, 2023. 
+Lin, H.; Bergmann, N.W. IoT Privacy and Security Challenges for Smart Home Environments. Information 2016, 7, 44. https://doi.org/10.3390/info7030044
