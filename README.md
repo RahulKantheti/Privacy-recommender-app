@@ -1,5 +1,4 @@
-# SER-517_Team-27
-Capstone Project of Group F-27 for Spring 2024
+# Capstone Project 
 
 ## Team members
 
