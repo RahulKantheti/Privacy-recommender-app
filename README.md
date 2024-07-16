@@ -1,15 +1,18 @@
-# Capstone Project 
+## Activity Diagram
+![Activity diagram](https://github.com/skasmola/SER-517_Team-27/assets/112654794/070f8844-750e-403b-a0fd-a7c29a9be614)
+The Activity Diagram outlines the flow of interactions within the Android app-based privacy recommendation system. It begins with the user logging into the application, initiating the process. Then the app scans for nearby beacons to ascertain the user's location. Upon detecting nearby beacons, the app calculates the user's exact position within the room based on the Received Signal Strength Indicator (RSSI) and layout of the room stored in a database. If IoT sensors are identified in proximity to the user's location calculated based on the range of the sensor stored in the sensor database, the app sends a notification alerting the user of potential privacy threats. In addition to the alert the application displays sensor data stored on the cloud, accompanied by mitigation strategies to counter the identified threats. If no sensors are initially detected, the app continues scanning for updated user positions, ensuring real-time monitoring of the user's environment.
 
-## Team members
+![system architecture drawio](https://github.com/skasmola/SER-517_Team-27/assets/112654794/b2f8f5ef-ff99-4150-9ab7-1ca563ec8505)
+The architecture of the Android app-based privacy recommendation system operates on a client-server model, where the client refers to the mobile application built using React Native with Expo. Meanwhile, the server hosts multiple services responsible for data processing and delivering functionality.
+The client-side of our mobile application is built using React Native with Expo, which includes cross-platform compatibility and simplifying development efforts. We are using the "react-native-ble-plx" library in our app to effectively detect nearby beacons and collect RSSI data, using this RSSI data we will get users exact position using the FSPL model. 
+The server infrastructure is the key component in our system, hosting the core functionalities of our mobile application. These services include user authentication, calculating user's location using RSSI, data retrieval and privacy threat analysis. It also provides APIs for communication with the mobile application, enabling data exchange and notification delivery.
+Our database is structured around key tables crucial for managing room layouts, sensor data, and Bluetooth beacons. We are hosting our database on the server for easy retrieval. The "Room" table contains unique identifiers and dimensions for each room, while the "Sensor" table links sensors to specific rooms and includes details such as retention periods and sensed data types. In addition, the "Bluetooth Beacon" table manages beacon data, associating each with relevant sensors and room coordinates. 
 
-Rahul Nanda Kantheti\
-Sakshith Reddy Kasmola\
-Keerthi Pendyala\
-Wasim Ahamad Syed\
-Vidit Sanghvi\
+Design Patterns:
+We can follow a client-service architecture pattern for this application. The mobile app is the client side and the backend is the server side of this project.
 
-## Design and architecture
+The server’s responsibilities include processing detected beacons, determining user location, querying sensors in range, and aggregating sensor data. Several design patterns and architectural styles come into play. Of these we have chosen to develop the backend service as Microservices.
 
-The project, "Privacy-related behavior recommendation for IoT sensors in our daily life," integrates front-end and back-end components to offer personalized privacy suggestions. The front-end mobile application, built with Expo React-Native, ensures simplified development and cross-platform compatibility, enhancing accessibility and efficiency. Users can authenticate and access sensor information and mitigation strategies through an intuitive interface. Utilizing sensors in IoT devices, the application dynamically adjusts recommendations based on user location and available sensors, improving relevance.
-
-On the back end, Django powers data analysis and recommendation generation, leveraging stability, security, and scalability. It receives data from beacons, determines user location through triangulation, and retrieves nearby active devices to assess privacy hazards. Seamless communication between front-end and back-end components enables immediate and pertinent assistance to users in navigating privacy risks. The architecture prioritizes user-centricity, aiming to raise awareness of privacy risks in the IoT era through personalized recommendations and user-friendly interfaces.
+Microservices: Given the distinct responsibilities (beacon processing, location mapping, sensor data aggregation), making the backend as a set of loosely coupled services or microservices can enhance modularity, scalability, and maintainability. Each service can independently handle specific tasks such as location processing, sensor data management, and room detection.
+Benefits of choosing Microservice Architecture:
+Parallel development on multiple fronts, the front-end development is independent of server side feature development and vice-versa. Even the backend features can be further divided into two independent categories: sensor/indoor location services that are called by front-end services and also database services that can be called to CRUD sensor data into DB. Reusability and easy deployment are also some useful benefits with this architecture choice.
